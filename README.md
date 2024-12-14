@@ -1,7 +1,3 @@
-Voici la version mise à jour du README avec les informations demandées, prête à être intégrée dans le fichier :
-
----
-
 ## Image Optimization
 
 Images are usually the heaviest components of a web page, both in terms of bytes and number of HTTP requests. Optimizing images on your website is critical to improve your users’ experience, reduce delivery costs and enhance your position in search engine ranking. For example, Google’s Largest Contentful Paint metric in their search ranking algorithm is highly impacted by how much you optimize the images on your website. In the solution, we provide you with a simple and performant solution for image optimization using serverless components such as Amazon CloudFront, Amazon S3 and AWS Lambda.
@@ -26,7 +22,7 @@ Ensure that you have Docker installed on your local machine. If you don't have D
 
 In this blog post, I explain how to combine AWS S3 and CloudFront to optimize images for ultra-fast delivery across your website. By integrating AWS Lambda into this architecture, images can be transformed into optimized formats like WebP or AVIF on demand, which drastically improves loading times and SEO performance. The solution leverages serverless technologies, making it highly scalable and cost-efficient.
 
-You can find the complete guide on how to deploy this solution in a Dockerized environment in my blog post titled [Optimisez vos images avec AWS S3 et CloudFront : Guide CDN pour des sites ultra-rapides](https://www.example.com/optimisation-images-aws).
+You can find the complete guide on how to deploy this solution in a Dockerized environment in my blog post titled [Optimize Your Images with AWS S3 and CloudFront: CDN Guide for Ultra-Fast Websites](https://culturedevops.com/en/blog/aws-s3-cloudfront-image-optimization).
 
 The blog post also describes the following steps for setting up the Docker environment:
 
@@ -57,6 +53,8 @@ The blog post also describes the following steps for setting up the Docker envir
    ```
 
    You can replace `<S3_BUCKET_NAME>` with your actual S3 bucket name.
+
+   See [the original repository](https://github.com/aws-samples/image-optimization) for full configuration options.
 
 5. **Test the optimized images**:  
    Once the deployment is completed, test the optimized image URLs provided by CloudFront as shown in the blog post.

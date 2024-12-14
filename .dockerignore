@@ -1,2 +1,3 @@
 node_modules/
 cdk.out/
+functions/image-processing/node_modules
