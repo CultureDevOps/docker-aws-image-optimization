@@ -1,0 +1,4 @@
+[default]
+#Change your prefered region
+region = eu-west-3
+output = json
