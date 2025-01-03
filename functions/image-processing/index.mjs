@@ -55,7 +55,12 @@ export const handler = async (event) => {
         if (operationsJSON['format']) {
             var isLossy = false;
             switch (operationsJSON['format']) {
-                case 'jpeg': contentType = 'image/jpeg'; isLossy = true; break;
+                case 'jpeg': 
+                contentType = 'image/jpeg'; 
+                isLossy = true; 
+                // Ajoute un fond blanc pour éviter le noir par défaut
+                transformedImage = transformedImage.flatten({ background: { r: 255, g: 255, b: 255 } });
+                break;
                 case 'gif': contentType = 'image/gif'; break;
                 case 'webp': contentType = 'image/webp'; isLossy = true; break;
                 case 'png': contentType = 'image/png'; break;

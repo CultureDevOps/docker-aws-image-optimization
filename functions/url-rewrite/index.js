@@ -14,7 +14,7 @@ function handler(event) {
                     if (request.querystring[operation]['value'] && SUPPORTED_FORMATS.includes(request.querystring[operation]['value'].toLowerCase())) {
                         var format = request.querystring[operation]['value'].toLowerCase(); // normalize to lowercase
                         if (format === 'auto') {
-                            format = 'jpeg';
+                            format = 'png';
                             if (request.headers['accept']) {
                                 if (request.headers['accept'].value.includes("avif")) {
                                     format = 'avif';
